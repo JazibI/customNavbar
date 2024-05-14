@@ -168,6 +168,7 @@
 .cart_strip a {
   color: #000000;
   text-transform: capitalize;
+  z-index: -10;
 }
 
 @media (max-width: 576px) {

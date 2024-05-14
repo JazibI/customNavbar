@@ -195,9 +195,11 @@ $black: #000000;
 }
 
 .cart_strip{
+    
     a{
         color: $black;
         text-transform: capitalize;
+        z-index: -10;
     }
 }
 
