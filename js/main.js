@@ -1,17 +1,17 @@
-// let header_sect = document.querySelector("#header_sect");
+let header_sect = document.querySelector("#header_sect");
 
-// let dropdown_nav = document.querySelector("#dropdown_nav");
+let cart_btn_strip = document.querySelector("#cart_btn_strip");
 
-// let header_sectHeight = header_sect.offsetHeight;
+let header_sectHeight = header_sect.offsetHeight;
 
-// dropdown_nav.style.marginTop = header_sectHeight + "px";
+cart_btn_strip.style.marginTop = header_sectHeight + "px";
 
 
-// window.addEventListener('resize', function () {
-//     let header_sectHeight = header_sect.offsetHeight;
+window.addEventListener('resize', function () {
+    let header_sectHeight = header_sect.offsetHeight;
 
-//     dropdown_nav.style.marginTop = header_sectHeight + "px";
-// })
+cart_btn_strip.style.marginTop = header_sectHeight + "px";
+})
 
 let hamburger_btn = document.querySelector("#hamburger_btn");
 
@@ -22,11 +22,17 @@ hamburger_btn.addEventListener("click", function(){
 })
 
 
-let user_btn = document.querySelector("#user_btn");
 
-let user_dropdown = document.querySelector("#user_dropdown");
 
-user_btn.addEventListener("click", function(){
-    user_dropdown.classList.toggle("users_info_togler")
+let hero_img = document.querySelector("#hero_img");
+
+let hero_imgHeight = hero_img.offsetHeight;
+
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY > hero_imgHeight){
+        header_sect.classList.add('gb_light_gray');
+    }else{
+        header_sect.classList.remove('gb_light_gray');
+    }
 })
-
