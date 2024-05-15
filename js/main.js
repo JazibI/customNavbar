@@ -27,6 +27,10 @@ hamburger_btn.addEventListener("click", function(){
 let hero_img = document.querySelector("#hero_img");
 
 let hero_imgHeight = hero_img.offsetHeight;
+// let hero_imgHeightA = hero_img.offsetHeight + 10;
+
+
+
 
 
 window.addEventListener('scroll', function(){
