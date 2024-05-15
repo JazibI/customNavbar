@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0);
+}
+
 .ps_a {
   position: absolute;
 }
@@ -108,6 +113,26 @@
   transition: all 0.5s;
 }
 
+.user_details {
+  padding: 0.7rem 0.75rem;
+  transition: all 0.3s linear;
+}
+.user_details button {
+  border: 1px solid gray;
+}
+.user_details .dropdown-menu {
+  display: block !important;
+  z-index: -1;
+  transform: translate3d(12px, 16px, 0px) !important;
+  opacity: 0;
+}
+.user_details .dropdown-menu.show {
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.3s linear;
+  transform: translate3d(12px, 59px, 0px) !important;
+}
+
 .search_sect input {
   padding: 0.5rem 2.5rem 0.5rem 1.5rem;
   display: inline-block;
@@ -141,13 +166,12 @@
   right: 0;
   min-width: 10rem;
   background-color: #cccccc;
-  z-index: -1;
-  transform: translateY(-100%);
+  transform: translateY(-2rem);
   display: block;
   opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
+  transition: all 0.2s linear;
   padding: 0.5rem 0;
+  z-index: -1;
 }
 .nav_dropdown li {
   padding: 0.5rem 1rem;
@@ -155,7 +179,7 @@
 
 .dropdown_togler {
   opacity: 1;
-  visibility: visible;
+  z-index: 1;
   transform: translateY(0);
 }
 
@@ -168,7 +192,6 @@
 .cart_strip a {
   color: #000000;
   text-transform: capitalize;
-  z-index: -10;
 }
 
 @media (max-width: 576px) {
