@@ -49,6 +49,10 @@
   background-color: transparent;
 }
 
+.gb_light_gray {
+  background-color: #eaeaea;
+}
+
 .list_style_none {
   list-style: none;
 }
@@ -60,10 +64,6 @@
 .custom_a {
   display: inline-block;
   text-decoration: none;
-}
-
-.gb_light_gray {
-  background-color: #eaeaea;
 }
 
 .site_logo {
