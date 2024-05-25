@@ -40,3 +40,24 @@ window.addEventListener('scroll', function(){
         header_sect.classList.remove('gb_light_gray');
     }
 })
+
+
+
+let search_panel = document.querySelector(".search_panel")
+// let search_bar = document.querySelector(".search_bar")
+
+
+let cross_icon = document.querySelector(".cross_icon")
+
+let search_icon = document.querySelector(".search_icon")
+
+let search_bar = document.querySelector(".search_bar")
+
+
+search_icon.addEventListener('click', function(){
+    search_panel.classList.add('width_toggle')
+})
+
+cross_icon.addEventListener('click', function(){
+    search_panel.classList.remove('width_toggle')
+})
