@@ -11,8 +11,22 @@
   position: absolute;
 }
 
+.ps_r {
+  position: relative;
+}
+
 .d_flex {
   display: flex;
+}
+
+.justify_end {
+  justify-content: end;
+}
+
+.align_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text_transform_upper {
@@ -25,10 +39,6 @@
 
 .gap-1 {
   gap: 1rem;
-}
-
-.justify_end {
-  justify-content: end;
 }
 
 .sect_space {
@@ -50,12 +60,6 @@
 .custom_a {
   display: inline-block;
   text-decoration: none;
-}
-
-.align_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .gb_light_gray {
