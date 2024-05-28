@@ -280,6 +280,7 @@ header {
   margin-right: 2.75rem;
 }
 .search_panel.width_toggle .search_bar {
+  padding: 0.5rem 1rem 0.5rem 3rem !important;
   width: 25rem !important;
   outline-color: #eaeaea;
 }
