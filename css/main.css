@@ -132,6 +132,11 @@ header {
   transition: all 0.5s;
 }
 
+.nav_right .dropdown {
+  outline: 1px solid #eaeaea;
+  border-radius: 0.5rem;
+}
+
 .user_details {
   padding: 0.7rem 0.75rem;
   transition: all 0.3s linear;
@@ -191,15 +196,22 @@ header {
   transition: all 0.2s linear;
   padding: 0.5rem 0;
   z-index: -1;
+  pointer-events: none;
 }
 .nav_dropdown li {
   padding: 0.5rem 1rem;
+}
+.nav_dropdown li a {
+  color: black;
 }
 
 .dropdown_togler {
   opacity: 1;
   z-index: 1;
   transform: translateY(0);
+}
+.dropdown_togler li {
+  pointer-events: auto;
 }
 
 .users_info_togler {
@@ -260,10 +272,13 @@ header {
 .search_bar {
   width: 0.8rem;
   outline: 1px solid transparent;
-  padding: 0.5rem 1rem 0.5rem 2.7rem;
+  padding: 0.5rem 1rem 0.5rem 1.2rem;
   border: 0;
 }
 
+.search_panel.width_toggle {
+  margin-right: 2.75rem;
+}
 .search_panel.width_toggle .search_bar {
   width: 25rem !important;
   outline-color: #eaeaea;
@@ -282,6 +297,11 @@ header {
   opacity: 1;
 }
 
+@media (max-width: 786px) {
+  .search_panel {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .d_sm_none {
     display: none;
