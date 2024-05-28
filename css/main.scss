@@ -1,4 +1,4 @@
-
+@import '_booking.scss';
 // color variables
 
 $color-light-gray: #eaeaea;
@@ -12,6 +12,16 @@ $black: #000000;
 .btn:focus {
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, 0);
+}
+
+//text align
+
+.t_align-r{
+    text-align: right;
+}
+
+.t_align-l{
+    text-align: left;
 }
 
 // positioning
