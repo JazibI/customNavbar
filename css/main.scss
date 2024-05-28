@@ -384,11 +384,11 @@ header {
     }
 }
 
-@media(max-width: 786px){
-    .search_panel{
-        display: none;
-    }
-}
+// @media(max-width: 786px){
+//     .search_panel{
+//         display: none;
+//     }
+// }
 
 
 
@@ -403,14 +403,14 @@ header {
         width: calc(1rem + 5vw);
     }
 
-    .search_section{
-        flex-direction: column;
+    
 
-        .search_panel.width_toggle {
-            .search_bar {
-                width: 19rem !important;
-                outline-color: #eaeaea;
-            }
+    .search_panel.width_toggle {
+        margin-right: 2.75rem;
+        .search_bar {
+            padding: .5rem 1rem .5rem 3rem!important;
+            width: 10rem !important;
+            outline-color: #eaeaea;
         }
     }
 

@@ -298,11 +298,6 @@ header {
   opacity: 1;
 }
 
-@media (max-width: 786px) {
-  .search_panel {
-    display: none;
-  }
-}
 @media (max-width: 576px) {
   .d_sm_none {
     display: none;
@@ -310,11 +305,12 @@ header {
   .site_logo {
     width: calc(1rem + 5vw);
   }
-  .search_section {
-    flex-direction: column;
+  .search_panel.width_toggle {
+    margin-right: 2.75rem;
   }
-  .search_section .search_panel.width_toggle .search_bar {
-    width: 19rem !important;
+  .search_panel.width_toggle .search_bar {
+    padding: 0.5rem 1rem 0.5rem 3rem !important;
+    width: 10rem !important;
     outline-color: #eaeaea;
   }
 }/*# sourceMappingURL=main.css.map */
