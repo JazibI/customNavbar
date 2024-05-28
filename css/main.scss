@@ -359,7 +359,7 @@ header {
     margin-right: 2.75rem;
     .search_bar {
         padding: .5rem 1rem .5rem 3rem!important;
-        width: 25rem !important;
+        width: calc(5rem + 30vw) !important;
         outline-color: #eaeaea;
     }
 }
@@ -409,7 +409,7 @@ header {
         margin-right: 2.75rem;
         .search_bar {
             padding: .5rem 1rem .5rem 3rem!important;
-            width: 10rem !important;
+            // width: 10rem !important;
             outline-color: #eaeaea;
         }
     }

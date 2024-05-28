@@ -281,7 +281,7 @@ header {
 }
 .search_panel.width_toggle .search_bar {
   padding: 0.5rem 1rem 0.5rem 3rem !important;
-  width: 25rem !important;
+  width: calc(5rem + 30vw) !important;
   outline-color: #eaeaea;
 }
 
@@ -310,7 +310,6 @@ header {
   }
   .search_panel.width_toggle .search_bar {
     padding: 0.5rem 1rem 0.5rem 3rem !important;
-    width: 10rem !important;
     outline-color: #eaeaea;
   }
 }/*# sourceMappingURL=main.css.map */
